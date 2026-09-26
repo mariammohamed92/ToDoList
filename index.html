@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project </title>
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+<div id="app">
+  <h2>قائمة المهام ✅</h2>
+  <div class="row">
+    <input id="taskInput" type="text" placeholder="اكتب مهمة جديدة..."
+           onkeyup="if(event.key==='Enter'){ addTask(); }">
+    <button onclick="addTask()">إضافة</button>
+  </div>
+  <ul id="taskList"></ul>
+</div>
+
+
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/style.js"></script>
+    </body>
+</html>

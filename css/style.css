@@ -1,0 +1,77 @@
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #1e2130;
+  --accent: #4f6df5;
+  --line: #dfe3ee;
+  --bad: #e74c3c;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: env(safe-area-inset-top, 20px) 16px env(safe-area-inset-bottom, 20px);
+}
+#app {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 22px;
+  width: 340px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+.row button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+li span {
+  cursor: pointer;
+  flex: 1;
+}
+li button {
+  background: var(--bad);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-right: 8px;
+}
